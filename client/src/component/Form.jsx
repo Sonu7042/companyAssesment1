@@ -6,7 +6,7 @@ const Form = ({func}) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await axios.post("http://localhost:9000/task", { task });
+    const response = await axios.post("https://company-assesment1.vercel.app/task", { task });
     setTask("");
     func();
   };

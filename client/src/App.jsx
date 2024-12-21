@@ -9,7 +9,7 @@ const App = () => {
 
   // fetchData
   const fetchData = async () => {
-    const response = await axios.get("http://localhost:9000/getAllTask");
+    const response = await axios.get("https://company-assesment1.vercel.app/getAllTask");
     setData(response.data.data);
   };
 
